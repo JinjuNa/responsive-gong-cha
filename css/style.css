@@ -11,7 +11,7 @@ body{
 /* mainVideo */
 .mainVideo{
     position: relative;
-    height: 440px;
+    height: 500px;
 }
 
 
@@ -80,6 +80,7 @@ body{
  }
 
  .menu .menutab li{
+     
      width:33.33%;
      height: 50px;
      line-height: 50px;
@@ -162,7 +163,9 @@ body{
 }
 
 /* content영역 */
-
+.content{
+    background-color:#eee;
+}
 .searchwrap{
     background-color: #eee;
     text-align: center;
@@ -173,6 +176,7 @@ body{
 .searchwrap input{
     width: 85%;
     margin: 5%;
+    
     
 }
 
@@ -185,12 +189,12 @@ body{
 .ordertext{
     text-align: center;
     width:100%;
-    margin:30px 0;
+
 }
 
 .content p{
     font-size:10px;
-    margin-top:10px;
+    margin-top:5%;
 }
 
 .ordertext .more{
@@ -204,11 +208,19 @@ body{
     margin-left:5px;
 }
 
+/* footer */
 
-
+footer{
+    background-color: #3f3f3f;
+    color:#9f9f9f;
+}
 
 /* 모바일 767px 이하 */
 /* mobileheader */
+
+.PCheader{
+    display: none;
+}
 .mobileHeader{
     height: 80px;
     position: fixed;
@@ -261,11 +273,17 @@ body{
     left:-100%;
 }
 
-/* mobilebord */
+/* mobileboard */
+.PCboard{
+    display: none;
+}
 
+.mobileboard{
+    width:100%;
+    background-color: white;
+}
 
-
-.mobilebord ul li img{
+.mobileboard ul li img{
     width:100%;
 }
 
@@ -286,6 +304,15 @@ body{
 }
 
 /* 모바일 content */
+
+.PCheader{
+    display: none;
+}
+
+.bestcombinationwrap{
+    display: none;
+}
+
 .orderwrap{
     position: relative;
 }
@@ -304,9 +331,13 @@ height: 150px;
     height: 30px;    
 }
 
+.order{
+    display: none;
+}
+
 .ordertext{
     position: absolute;
-    top:0;
+    top:10%;
     left:0;
 }
 
@@ -315,17 +346,176 @@ height: 150px;
     width:100%;
 }
 
-.content .season_m{
+.content .season_m img{
     width:100%;
+}
+
+.season{
+    display: none;
 }
 
 
 
 /* 태블릿 768px 이상 */
+@media screen and (min-width:768px){
 
+    #mainVideo{
+        width:150%;
+        left:-25%;
+    }
+    .mainVideo{
+        height: 900px;
+    }
+
+    .notice{
+        height: 70px;
+        line-height: 70px;
+        font-size:18px;
+    }
+
+    .menu .menutab li{
+        font-size:20px;
+    }
+
+    .menu .category{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .menu .item ul li{
+        height: 400px;
+    }
+
+    .menu .item .name{
+        font-size:1.2em;
+    }
+
+    .content h3{
+        font-size:1.5em;
+    }
+
+    .content p{
+        font-size:1.2em;
+    }
+
+    .searchwrap input{
+        height: 50px;
+        font-size:1.5em;
+        
+    }
+
+    .searchwrap{
+        height: 250px ;
+    }
+
+    .searchwrap button{
+        height: 50px;
+        font-size:1.5em;
+    }
+}
 
 
 /* pc 992px 이상 */
+@media screen and (min-width:992px){
+    .wrap{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .PCheader{
+        display: block;
+        background-color: white;
+    }
+
+    .PCboard img{
+        width: 100%;
+    }
+    
+    .mobileHeader{
+        display: none;
+    }
+
+    #mainVideo{
+        top:-50px;
+        width: 100%;
+        left:0;
+        
+    }
+
+    /* PCboard */
+    .mobileboard{
+        display: none;
+    }
+    .PCboard{
+        display: block;
+    }
+
+    /* menu */
+    .menu .item ul li{
+        width:20%;
+    }
+    .menu .category{
+        width:100%;
+        margin:0;
+    }
+    
+
+    /* content 영역 */
+    .bestcombinationwrap{
+        display: block;
+    }
+    .order_m{
+        display: none;
+    }
+
+    .order{
+        display: block;
+    }
+
+    .season_m{
+        display: none;
+    }
+
+    .season{
+        display: block; 
+    }
+    /* .searchwrap{
+        width:100%;
+    } */
+
+    .content .wrap:after{
+        display: block;
+        clear:both;
+        content: '';
+    }
+    .orderwrap{
+        width:400px;
+        float:left;
+    }
+
+    .seasonwrap{
+        width:800px;
+        float: left;
+        
+    }
+
+    .searchwrap{
+        background-color: #efefef;
+        width:400px;
+        float:left;
+        padding:0;
+        height: 386px;
+    }
+    
+    .searchwrap h3{
+        margin-top:100px;
+    }
+
+    .bestcombinationwrap{
+        float:left;
+        width:800px;
+    }
+}
+
 
 /* .menu .menuTop{
     background-image: url(../img/page_top_visual_menu.jpg);
