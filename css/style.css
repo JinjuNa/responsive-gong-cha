@@ -1,0 +1,335 @@
+@charset 'utf-8';
+
+a{
+    color:inherit;
+}
+
+body{
+    color:#313131;
+}
+
+/* mainVideo */
+.mainVideo{
+    position: relative;
+    height: 440px;
+}
+
+
+#mainVideo {
+    position: fixed;
+    left: -50%;
+    
+    top:80px;
+    width: 200%; 
+    height:auto;
+    z-index: -10;
+    
+    }
+
+ /* 공지사항 */
+ .notice{
+     width:100%;
+     color:#efefef;
+     background-color:#2a2a2a;
+     position: relative;
+
+ }
+
+ .notice img{
+     vertical-align: middle;
+     margin-left:5%;
+ }
+
+
+ .notice ul{
+     display: inline-block;
+ }
+
+ .notice i{
+     position: absolute;
+     right: 5%;
+     top:50%;
+     margin-top:-7px;
+ }
+
+ /* MENU */
+
+ .menu{
+     background-color: #fff;
+ }
+
+
+
+ .menu h3{
+     text-align: center;
+     color:#2a2a2a;
+     font-size:2.3em;
+     margin-bottom:10%;
+     padding-top:8%;
+ }
+
+ .menu .menutab{
+     width:90%;
+     margin:0 auto;
+ }
+
+ .menu .menutab:after{
+     display: block;
+     clear: both;
+     content:'';
+ }
+
+ .menu .menutab li{
+     width:33.33%;
+     height: 50px;
+     line-height: 50px;
+     float: left;
+     background-color:#efefef;
+     text-align: center;
+     color:#313131;      
+ }
+
+ .menu .menutab li:hover{
+     background-color:#983b43;
+     color:#efefef;
+ }
+
+.menu .tabmenuTitle h4{
+    text-align: center;
+    font-size:1.8em;
+    margin: 10% 0;
+    color:#575757;
+}
+
+
+.menu .category{
+    width:85%;
+    text-align: center;
+    margin:10% auto;
+}
+
+.menu .category li{
+    display: inline-block;
+    padding: 0 2%;
+    margin-bottom:2%;
+}
+
+.menu .category li:hover{
+    border-bottom:2px solid #983b43;   
+}
+
+.menu .item:after{
+    display: block;
+    clear:both;
+    content:'';
+}
+
+ .menu .item ul li{
+     float:left;
+     text-align: center;
+     height: 172px;
+ }
+ .menu .item ul li img{
+     width: 80%;
+ }
+
+ .menu .item .name{
+     font-weight: 800;
+     color:#3f3f3f;
+     font-size:0.8em;
+ }
+
+.menu .tabmenu:nth-child(1){
+    /* display: none */
+}
+
+ .menu .tabmenu:nth-child(2){
+     display: none;
+
+ }
+
+#dessert01{
+    display: none;
+}
+
+#dessert02{
+    display: none;
+}
+
+ .menu .tabmenu:nth-child(3){
+    display: none;
+
+}
+
+/* content영역 */
+
+.searchwrap{
+    background-color: #eee;
+    text-align: center;
+    padding: 10% 0;
+    
+}
+
+.searchwrap input{
+    width: 85%;
+    margin: 5%;
+    
+}
+
+.searchwrap button{
+    background-color: #983b43;
+    border:none;
+    color: #eee;
+}
+
+.ordertext{
+    text-align: center;
+    width:100%;
+    margin:30px 0;
+}
+
+.content p{
+    font-size:10px;
+    margin-top:10px;
+}
+
+.ordertext .more{
+    margin-top:10px;
+    font-size:12px;
+    text-decoration: underline;
+    
+}
+
+.ordertext i{
+    margin-left:5px;
+}
+
+
+
+
+/* 모바일 767px 이하 */
+/* mobileheader */
+.mobileHeader{
+    height: 80px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    
+    /* background-color: aqua; */
+
+}
+
+.mobileHeaderIn{
+    position: relative;
+}
+
+.mobileHeader h1 a{
+    margin-left:10%;
+    line-height: 80px;
+}
+
+.mobileHeader h1 a img{
+    vertical-align: middle;
+    height: 70px;
+    width: auto;
+}
+
+.mobileHeader .menuicon{
+    width: 40px;
+    background-color: white;
+    border: none;
+    position: absolute;
+    top:20px;
+    right: 7%;
+    
+}
+
+.mobileHeader button span{
+    width: 30px;
+    height: 3px;
+    background-color: #2a2a2a;
+    display: block;
+    margin:7px auto;
+}
+
+.mobileMenu{
+    position: absolute;
+    top:0;
+    left:-100%;
+}
+
+/* mobilebord */
+
+
+
+.mobilebord ul li img{
+    width:100%;
+}
+
+.menu .tabmenuTitle>p{
+    display: none;
+}
+
+/* 모바일 공지사항 */
+
+.notice{
+    line-height: 50px;
+    height:50px ;
+}
+
+/* 모바일 MENU */
+.menu .item ul li{
+    width:50%;
+}
+
+/* 모바일 content */
+.orderwrap{
+    position: relative;
+}
+
+.searchwrap{
+height: 150px;
+}
+.searchwrap input{
+    width: 90%;
+    height: 30px;
+}
+
+.searchwrap button{
+    width: 50%;
+    margin: 0 auto;
+    height: 30px;    
+}
+
+.ordertext{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+.content .order_m{
+    width:100%;
+}
+
+.content .season_m{
+    width:100%;
+}
+
+
+
+/* 태블릿 768px 이상 */
+
+
+
+/* pc 992px 이상 */
+
+/* .menu .menuTop{
+    background-image: url(../img/page_top_visual_menu.jpg);
+   background-repeat: no-repeat;
+   background-size: auto 100%;
+   background-position: center;
+   } */
